@@ -4,8 +4,7 @@
 
 @section('content')
 
-
-    <!-- Page header with logo and tagline-->
+ <!-- Page header with logo and tagline-->
     <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
@@ -14,6 +13,45 @@
                 </div>
             </div>
     </header>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <section class="py-4 border-bottom" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4">
+            <div class="p-3 d-flex flex-column align-items-center">
+                    <div class="feature bg-info text-white rounded-3 mb-3 d-flex justify-content-center align-items-center" style="width: 100px; height: 100px; font-size: 3rem;">
+                    <i class="bi bi-book"></i>
+                    </div>
+                    <h2 class="h3 fw-bolder text-center">Estudios Biblicos</h2>
+                    <p class="cuadrito1 text-center">Comparte tus opiniones y todo lo que has logrado entender en el maravilloso estudio de cronologia, apologetica y diferentes ramas del estudio biblico</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="p-3 d-flex flex-column align-items-center">
+                    <div class="feature bg-info text-white rounded-3 mb-3 d-flex justify-content-center align-items-center"
+                    style="width: 100px; height: 100px; font-size: 3rem;">
+                    <i class="bi bi-chat-heart"></i>
+                    </div>
+                    <h2 class="h3 fw-bolder text-center">La palabra de Dios</h2>
+                    <p class="cuadrito1 text-center">La palabra de Dios como el centro de nuestras vidas; esta plataforma nos estimula a mantener en nuestros corazones cada enseñanza dada por Dios, entendiendo que si el amor de Dios permanece en nuestros corazones, essto mismo hablaremos y reflejaremos</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="p-3 d-flex flex-column align-items-center">
+                    <div class="feature bg-info text-white rounded-3 mb-3 d-flex justify-content-center align-items-center-" style="width: 100px; height: 100px; font-size: 3rem;">
+                    <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <h2 class="h3 fw-bolder text-center">Comunidad y familia</h2>
+                    <p class="cuadrito1 text-center">Este espacio tambien te permitira publicar necesidades en la comunidad, para estar atentos y de ese modo brindar un apoyo en amor y solidaridad a aquellas personas que lo requieran</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Page content-->
 <div class="container">
@@ -25,6 +63,7 @@
                 <div class="card mb-4">
                     <a href="#!"><img class="card-img-top" src="{{ asset('storage').'/'.$postOne->image }}" alt="..." /></a>
                     <div class="card-body">
+                        
                         
                         <div class="small text-muted">{{ $postOne->created_at }}</div>
                         <h2 class="card-title">{{ $postOne->title }}</h2>

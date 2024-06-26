@@ -12,6 +12,7 @@
             <p class="lead mb-0">Este espacio esta reservado para ti; comparte tus opiniones y experiencias </p>
         </div>
     </div>
+    
 </header>
 
 <!-- Page content-->

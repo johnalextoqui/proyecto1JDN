@@ -71,7 +71,7 @@ class PostController extends Controller
     {
         $post=Post::findOrFail($id);  // Recupera información
 
-        return view('newPost', compact('post')); // Envia al formulario
+        return view('editPost', compact('post')); // Envia al formulario
     }
 
     /**
