@@ -16,3 +16,5 @@ class Post extends Model
         'image'
     ];
 }
+
+

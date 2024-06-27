@@ -95,7 +95,12 @@
                                     @csrf
                                     {{ method_field('DELETE') }}
                                     <input class="btn btn-danger" type="submit" onclick="return confirm('¿ Esta seguro que desea eliminar ?')" value="Eliminar">
+                                    <div class="form-group">
+                                      <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar comentario</button>
                                 </form>
+                                
                             </div>
                         </div>
                        
@@ -103,6 +108,7 @@
                     </div>
                 @endforeach
             </div>
+            
             <!-- Pagination-->
             <nav aria-label="Pagination">
                 <hr class="my-0" />

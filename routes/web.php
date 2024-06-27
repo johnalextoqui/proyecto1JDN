@@ -31,5 +31,7 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home',[PostController::class,'index'])->name('home');
     Route::get('/add', [PostController::class, 'create'])->name('newPost');
+    
+
 });
 
