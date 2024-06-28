@@ -95,10 +95,15 @@
                                     @csrf
                                     {{ method_field('DELETE') }}
                                     <input class="btn btn-danger" type="submit" onclick="return confirm('¿ Esta seguro que desea eliminar ?')" value="Eliminar">
+                                    
+                                </form>
+
+                                <form action="procesar.php" method="POST"> 
                                     <div class="form-group">
-                                      <textarea class="form-control" rows="5"></textarea>
+                                           <label for="comentario">Escribe tu comentario:</label>
+                                           <textarea id="comentario" name="comentario" class="form-control" rows="5"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                                           <button type="submit" class="btn btn-primary">Enviar comentario</button>
                                 </form>
                                 
                             </div>

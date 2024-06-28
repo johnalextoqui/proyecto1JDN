@@ -55,6 +55,7 @@ class PostController extends Controller
 
         return redirect('post');
     }
+    
 
     /**
      * Display the specified resource.
